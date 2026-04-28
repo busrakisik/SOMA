@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SOMA — Personalized Biological Intelligence System
 
-## Getting Started
+> "Every human body has its own language. SOMA learns it."
 
-First, run the development server:
+## What is SOMA?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Medicine still treats the average human. Reference values are population 
+averages. But your cortisol at 7am, your glucose response to specific foods, 
+your brain's optimal sleep cycle — nobody knows these. SOMA fixes that.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+SOMA is a personalized health AI that learns your unique biomarker patterns 
+over time and tells you not what's good for the average population — but 
+what's good for *your* body.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Current Status: v0.1
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [x] CGM data ingestion (Dexcom/Abbott export)
+- [x] Time-series pattern analysis
+- [x] 3PM energy crash detection engine  
+- [x] Notification intervention layer
+- [ ] Sleep data integration (Apple HealthKit)
+- [ ] Cortisol proxy modeling
+- [ ] Doctor summary report generator
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- Python (Pandas, NumPy, Matplotlib)
+- Streamlit (UI)
+- OpenAI API (insight generation)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Vision
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Reactive medicine → Predictive medicine.  
+In 10 years, we shouldn't ask "how do you feel?"  
+We should ask "what does your data say?"
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Built by Büşra Kısık — Industrial Engineer & Product Builder*
